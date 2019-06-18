@@ -13,5 +13,6 @@ print(loss_percentage(5, 5))
 #Player goalscoring records
 def Goals_Per_Game(player, goals, games):
   Gpg = goals/games
-  print(player + " has scored at a rate of " + str(Gpg) + " goals per game."
+  print(player + " has scored at a rate of " + str(Gpg) + " goals per game.")
+  
         
