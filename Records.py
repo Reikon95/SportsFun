@@ -10,7 +10,8 @@ def loss_percentage(wins, losses, draws):
   return losses / (wins + losses + draws) * 100
 print(loss_percentage(5, 5))
 
-#Player goalscoring records(player, goals, games):
+#Player goalscoring records
+def Goals_Per_Game(player, goals, games):
   Gpg = goals/games
   print(player + " has scored at a rate of " + str(Gpg) + " goals per game."
         
