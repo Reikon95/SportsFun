@@ -16,3 +16,5 @@ def Goals_Per_Game(player, goals, games):
   print(player + " has scored at a rate of " + str(Gpg) + " goals per game.")
   
         
+def save_percentage(shots, saves):
+  return saves / (saves + shots) * 100
