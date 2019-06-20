@@ -18,3 +18,11 @@ def Goals_Per_Game(player, goals, games):
         
 def save_percentage(shots, saves):
   return saves / (saves + shots) * 100
+
+        
+def shot_percentage(shots, goals):
+  return shots / (shots + shots) * 100
+
+def shots_per_goal(shots, goals):
+  Spg = goals/shots
+  return Spg
