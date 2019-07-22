@@ -12,3 +12,7 @@ Income of league affecting performance of league<br>
 Weighted average performance (hockey, football)<br>
 Most underrated position (rugby)<br>
 Ages and their impact
+
+Current data in here -
+
+All international football matches until 22/07/2019
