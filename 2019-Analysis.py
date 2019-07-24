@@ -17,3 +17,10 @@ with open('2019results.csv') as lines_doc:
   
   print(is_country_present('Scotland'))
   
+
+    def how_many_wins(country):
+      if 'Yes' in is_counry_present(country):
+        return country ' has won ' + str(x) ' out of ' str(x) + ' games.' 
+      else:
+        return 
+    how_many_wins('scotland')
