@@ -1,26 +1,29 @@
-with open('2019results.csv') as lines_doc:
-  # for line in lines_doc.readlines():
-    # print(line)
-  
+with open('2019results.csv') as results:
+
   def is_country_present(country):
-    i = 0
-    for line in lines_doc.readlines():
-      if country in line:
-        i += 1
-    
-    if i > 0:
-      print('Yes, ' + country + ' has played ' + str(i) + ' times this year.')
+    matches = []
+    for match in results.readlines():
+      if country in match:
+        matches.append(match)
+    if len(matches) > 0:
+      print('Yes, ' + country + ' has played ' + str(len(matches)) + ' times this year.')
       return True
     else:
       print('Nope. Either that is not a country or they have not played yet')
-      return False
-  
+      return False  
+      
+    
   print(is_country_present('Scotland'))
   
 
-  def how_many_wins(country):
-    if (1 + 1) == 2:
-      return is_country_present(country)
+  def get_match_list(country):
+    matches = []
+    for match in results.readlines():
+      if country in match:
+        matches.append(match)
+    if len(matches) > 0:
+      return matches
     else:
-      return 'something has gone horribly wrong here'
-  print(how_many_wins('Scotland'))
+      return 'It appears this country has not played a match in 2019.'
+  
+  print(get_match_list('Scotland'))
