@@ -15,7 +15,7 @@ with open('2019results.csv') as results:
       return False  
       
     
-  print(is_country_present('Scotland'))
+  is_country_present('Brazil')
   
 
   def get_match_list(country):
@@ -32,4 +32,4 @@ with open('2019results.csv') as results:
     else:
       return 'It appears this country has not played a match in 2019.'
   
-  print(get_match_list('Germany'))
+  get_match_list('Brazil')
