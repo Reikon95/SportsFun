@@ -15,7 +15,7 @@ with open('2019results.csv') as results:
       return False  
       
     
-  is_country_present('Brazil')
+  is_country_present('Germany')
   
 
   def get_match_list(country):
@@ -32,4 +32,30 @@ with open('2019results.csv') as results:
     else:
       return 'It appears this country has not played a match in 2019.'
   
-  get_match_list('Brazil')
+  get_match_list('Germany')
+
+  matches_dic = {}
+
+  def organise_matches():
+    i = 1
+    for match in results_total:
+      matches_dic.update( {i : match} )
+      i += 1  
+  organise_matches()
+
+  print(matches_dic[214])
+
+  details = {}
+  def split_details():
+    i = 1
+    for match in results_total:
+      a = match.split(',')
+      # details.update({i : a[0]})
+      # details.update({i : a[1]})
+      # details.update({i : a[2]})
+      # details.update({i : a[3]})
+      # details.update({i : a[4]})
+      i += 1
+  split_details()
+
+  print(split_details[214])
